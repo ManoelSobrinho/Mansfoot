@@ -13,8 +13,6 @@ package source;
  */
 public class jogador {
     
-    private int id;
-    
     private String nome;                            // get, set, show;
     private int idade;                              // get, set, show;
     private float estatura;                         // get, set, show;

@@ -13,7 +13,6 @@ package source;
  */
 public class clube {
     
-    private int id;
     private int posicao;
     
     private String nome;                // get, set, show;
@@ -23,6 +22,8 @@ public class clube {
     private float salarios;             // get, set, show;
     private float cash;                 // get, set, show;
     private String elenco[];            // 
+    private String titulares[];
+    private String reservas[];
     private String tecnico;             // get, set, show;
     private String titulos[];
     private String patrocinios[];
@@ -112,19 +113,19 @@ public class clube {
     }
     
     // Métodos elenco;
-/*	
-    public String getElenco(int posicao) {
-        return elenco[posicao];
+    /*
+    public String getElenco() {
+        return jogador[];
     }
 	
-    public void setElenco(String elenco) {
-	this.elenco[posicao] = elenco[posicao];
+    public void setElenco(String jogador[]) {
+	elenco[] = jogador[];
     }
     
     public void showElenco() {
         System.out.printf("%s", getElenco());
     }
-*/
+    */
     // Métodos tecnico;
 	
     public String getTecnico() {
