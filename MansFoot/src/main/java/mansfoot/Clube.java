@@ -1,4 +1,5 @@
 package mansfoot;
+import mansfoot.posicoes.Jogador;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -13,9 +14,10 @@ public class Clube {
     private String tecnico;
     private LinkedList<String> titulos = new LinkedList<>();
     private Patrocinio patrocinio;
-    private double fama;
+    private int fama;
     
-    public Clube(String nome, String nacionalidade, Estadio estadio, double cash, ArrayList<Jogador> elenco, String tecnico, Patrocinio patrocinio) {
+    public Clube(String nome, String nacionalidade, Estadio estadio, double cash, 
+                 ArrayList<Jogador> elenco, String tecnico, Patrocinio patrocinio, int fama) {
         this.nome = nome;
         this.nacionalidade = nacionalidade;
         this.estadio = estadio;
@@ -23,9 +25,9 @@ public class Clube {
         this.elenco = elenco;
         this.tecnico = tecnico;
         this.patrocinio = patrocinio;
+        this.fama = fama;
     }
-    
-    // Métodos nome;
+
     public String getNome() {
         return nome;
     }
@@ -33,8 +35,7 @@ public class Clube {
     public void setNome(String nome) {
 	this.nome = nome;	
     }
-    
-    // Métodos overall;
+
     public int getOverall() {
         return overall;
     }
@@ -42,8 +43,7 @@ public class Clube {
     public void setOverall(int overall) {
 	this.overall = overall;	
     }
-    
-    // Métodos nacionalidade;
+
     public String getNacionalidade() {
         return nacionalidade;
     }
@@ -51,8 +51,7 @@ public class Clube {
     public void setNacionalidade(String nacionalidade) {
 	this.nacionalidade = nacionalidade;	
     }
-    
-    // Métodos estadio;
+
     public Estadio getEstadio() {
         return estadio;
     }
@@ -60,8 +59,7 @@ public class Clube {
     public void setEstadio(Estadio estadio) {
 	this.estadio = estadio;	
     }
-    
-    // Métodos salarios;
+
     public double getSalario() {
         return salario;
     }
@@ -69,8 +67,7 @@ public class Clube {
     public void setSalario(double salario) {
 	this.salario = salario;	
     }
-    
-    // Métodos cash;
+
     public double getCash() {
         return cash;
     }
@@ -78,8 +75,7 @@ public class Clube {
     public void setCash(double cash) {
 	this.cash = cash;	
     }
-    
-    // Métodos elenco;
+
     public ArrayList<Jogador> getElenco() {
         return elenco;
     }
@@ -87,8 +83,7 @@ public class Clube {
     public void setElenco(ArrayList<Jogador> elenco) {
 	this.elenco = elenco;
     }
-    
-    // Métodos tecnico;
+
     public String getTecnico() {
         return tecnico;
     }
@@ -96,8 +91,7 @@ public class Clube {
     public void setTecnico(String tecnico) {
 	this.tecnico = tecnico;	
     }
-    
-    // Métodos títulos;
+
     public LinkedList<String> getTitulos() {
         return titulos;
     }
@@ -106,13 +100,20 @@ public class Clube {
         titulos.add(titulo);
     }
     
-    // Métodos patrocinio;
     public Patrocinio getPatrocinio() {
         return patrocinio;
     }
     
     public void setPatrocinio(Patrocinio patrocinio) {
         this.patrocinio = patrocinio;
+    }
+    
+    public int getFama() {
+        return fama;
+    }
+
+    public void setFama(int fama) {
+        this.fama = fama;
     }
     
     public String toString() {

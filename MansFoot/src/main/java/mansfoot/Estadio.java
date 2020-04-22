@@ -87,4 +87,17 @@ public class Estadio {
     public void setClube(Clube clube) {
         this.clube = clube;
     }
+    
+    public String toString() {
+        String s = "";
+        
+        if(clube != null)
+            s = clube.getNome();
+        else
+            s = "Sem clube";
+        
+        return nome + "\nCapacidade: " + capacidade + "\nCamarote: " + camarote 
+               + " [R$ " + vCamarote + "]\nCadeira: " + cadeira + " [R$ " + 
+               vCadeira + "]\nClube: " + s;
+    }
 }

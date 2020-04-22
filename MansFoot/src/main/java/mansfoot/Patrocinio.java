@@ -61,4 +61,9 @@ public class Patrocinio {
     public void setClube(Clube clube) {
         this.clube = clube;
     } 
+    
+    public String toString() {
+        return nome + "\nValor: R$ " + valor + "\nContrato: " + contrato 
+               + "\nTempo Contrato: " + tContrato + " anos\nClube: " + clube.getNome();
+    }
 }
